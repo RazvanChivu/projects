@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Volkswagen Car Purchase</h1>
+    <p id="description">Fill details below to complete your order</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name <input type="text" id="name" required placeholder="Enter Name"/></label>
+        <label id="email-label">Email <input type="email" id="email" required placeholder="Enter Email"/></label>
+        <label id="number-label">Age <input type="number" id="number" min="18" max="120" required placeholder="Age"/></label>
+        <label>Select Model
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Golf</option>
+            <option value="2">Passat</option>
+            <option Value="3">E Up!</option>
+            <option value="4">Tiguan</option>
+            <option value="5">Polo</option>
+          </select>
+        </label>
+        <label>
+          <p>Car color</p>
+          <label> <input name="color" type="radio" class="inline" value="1"/>White</label>
+          <label> <input name="color" type="radio" class="inline" value="2"/>Black</label>
+          <label> <input name="color" type="radio" class="inline" value="3"/>Blue</label>
+        </label>
+        <p>Add features</p>
+        <label><input value="1" type="checkbox" name="features" value="pilot" class="inline"/> Park Pilot - 474,81 €</label>
+        <label><input value="2" type="checkbox" name="features" value="led_lights" class="inline"/> Matrix LED Headlights - 1.137,64 €</label>
+        <label><input value="3" type="checkbox" name="features" value="heated_seats" class="inline"/> Heated Front Seats - 315,35 €</label>
+        <p>Any comments or requirements?</p>
+      <label>
+        <textarea name="comment" rows="4" cols="30" placeholder="Enter your comment..."></textarea>
+      </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
